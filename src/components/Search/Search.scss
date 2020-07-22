@@ -1,0 +1,37 @@
+@import '../../assets/styles/variables';
+
+.search {
+  .navigation {
+    margin-bottom: 50px;
+    color: $primary-purple;
+    font-size: 20px;
+    svg {
+      margin-right: 5px;
+    }
+  }
+  .title {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+  .results {
+    margin: 50px 0;
+    font-size: 20px;
+  }
+
+  input {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid $light-grey-border;
+    border-radius: 5px;
+    font-size: 40px;
+    &::placeholder {
+      color: $light-grey-border;
+    }
+    &:hover {
+      box-shadow: $dark-grey-border 0 0 5px;
+    }
+    &:focus {
+      box-shadow: $dark-grey-border 0 0 5px;
+    }
+  }
+}

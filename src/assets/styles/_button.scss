@@ -1,0 +1,84 @@
+button {
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+.group-btn {
+    .btn {
+        margin-left: 20px;
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    background-color: $primary-purple;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px;
+    &:hover {
+        background-color: $hover-purple;
+    }
+    &:active {
+        background-color: $dark-purple;
+    }
+    svg {
+        margin-right: 10px;
+    }
+    a {
+        color: #fff;
+    }
+}
+
+.play-btn {
+    position: absolute;
+    background-color: $play-btn-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    &:hover {
+        width: 70px;
+        height: 70px;
+    }
+    svg {
+        margin-left: 3px;
+    }
+}
+
+.tool-btn {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid $light-grey-border;
+    border-radius: 3px;
+    &:hover {
+        border-color: $dark-grey-border;
+        svg {
+            color: $dark-grey-border;
+        }
+    }
+}
+
+.add-btn {
+    @include flex;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid $light-grey-border;
+    color: #D5D5D5;
+    span {
+        font-size: 20px;
+        margin: auto;
+    }
+    &:hover {
+        border-color: $dark-grey-border;
+        color: $dark-grey-border;
+    }
+}

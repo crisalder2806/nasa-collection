@@ -1,0 +1,1 @@
+export const validateUrl = url => /\.[0-9a-z]+$/i.test(url);
